@@ -8,17 +8,14 @@
   },
   "scripts": {
     "prepublishOnly": "npm install && npm run clean && npm run build",
-    "build": "hexo generate", 
+    "build": "hexo generate",
     "clean": "tsc -b --clean",
     "eslint": "eslint lib test",
     "test": "mocha test/scripts/**/*.ts --require ts-node/register",
     "test-cov": "c8 --reporter=lcovonly npm test -- --no-parallel",
     "prepare": "husky"
   },
-  "files": [
-    "dist/",
-    "bin/"
-  ],
+  "files": ["dist/", "bin/"],
   "types": "./dist/hexo/index.d.ts",
   "repository": {
     "type": "git",
@@ -29,17 +26,9 @@
     "type": "opencollective",
     "url": "https://opencollective.com/hexo"
   },
-  "keywords": [
-    "website",
-    "blog",
-    "cms",
-    "framework",
-    "hexo"
-  ],
+  "keywords": ["website", "blog", "cms", "framework", "hexo"],
   "author": "Tommy Chen <tommy351@gmail.com> (https://zespia.tw)",
-  "maintainers": [
-    "Abner Chou <hi@abnerchou.me> (https://abnerchou.me)"
-  ],
+  "maintainers": ["Abner Chou <hi@abnerchou.me> (https://abnerchou.me)"],
   "license": "MIT",
   "dependencies": {
     "abbrev": "^3.0.0",
@@ -94,10 +83,5 @@
   },
   "engines": {
     "node": ">=20.19.0"
-  }
-}
-{
-  "scripts": {
-    "build": "hexo generate"
   }
 }
