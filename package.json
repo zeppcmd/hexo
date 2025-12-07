@@ -8,7 +8,7 @@
   },
   "scripts": {
     "prepublishOnly": "npm install && npm run clean && npm run build",
-    "build": "tsc -b",
+    "build": "hexo generate", 
     "clean": "tsc -b --clean",
     "eslint": "eslint lib test",
     "test": "mocha test/scripts/**/*.ts --require ts-node/register",
